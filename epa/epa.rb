@@ -1,4 +1,6 @@
-# session = TembooSession.new("roacobb21", "APP_NAME", "APP_KEY")
+require "temboo"
+
+session = TembooSession.new("roacobb21", "myFirstApp", "209d8f481894416fabe59cccf1fb3468")
 listReposByOrgChoreo = GitHub::ReposAPI::Repos::ListReposByOrg.new(session)
 
 # Get an InputSet object for the choreo
